@@ -12,6 +12,9 @@ print(rss_url)
 
 rss_data = requests.get(rss_url)
 
+print(rss_data.status_code)
+print(rss_data.content)
+
 # main_page = requests.get(twitch_url)
 # print(main_page.status_code)
 # print(main_page.content)
