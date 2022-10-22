@@ -9,3 +9,4 @@ graph_ql= 'https://gql.twitch.tv/gql'
 
 
 rss_feed_gen = 'https://twitchrss.appspot.com/vod/'
+twitch_video_regex = 'https://www.twitch.tv/videos/([0-9]{10})'
