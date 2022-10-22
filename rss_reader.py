@@ -15,11 +15,9 @@ print(regex.findall(twitch_video_id_regex, rss_content))
 
 rss_findings = regex.findall(twitch_video_id_regex, rss_content)
 
-print(type(rss_findings))
 
-print(str(rss_findings))
-
-
+for i in rss_findings:
+    print(i)
 
 # print(regex.findall(pattern, string)(twitch_video_regex, rss_content))
 
