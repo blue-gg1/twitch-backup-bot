@@ -1,9 +1,8 @@
 import os
 import requests
-# import youtube-dl
+from settings import auth_header, client_header, api_url, twitch_channel
 
-twitch_channel = 'trashfuturepodcast'
-twitch_url = 'https://www.twitch.tv/'+twitch_channel+'/videos?filter=archives&sort=time'
+
 
 
 print(twitch_channel)
