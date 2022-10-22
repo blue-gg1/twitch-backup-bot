@@ -8,7 +8,9 @@ load_rss = open("feed.rss" , "r")
 rss_content = load_rss.read()
 print(twitch_video_regex)
 
-print(twitch_video_regex.find("twitch.tv/videos"))
+
+print(regex.search(twitch_video_regex, rss_content))
+# print(regex.findall(pattern, string)(twitch_video_regex, rss_content))
 
 
 
