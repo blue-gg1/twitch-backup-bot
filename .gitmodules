@@ -1,3 +1,6 @@
 [submodule "libs/twitch-dl"]
 	path = libs/twitch-dl
 	url = https://github.com/ihabunek/twitch-dl.git
+[submodule "libs/youtube-dl"]
+	path = libs/youtube-dl
+	url = https://github.com/ytdl-org/youtube-dl.git
