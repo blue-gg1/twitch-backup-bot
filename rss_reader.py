@@ -3,6 +3,6 @@ import requests
 import regex
 
 
-load_html = open("page.html" , "r")
-print(load_html.read())
+load_rss = open("feed.rss" , "r")
+print(load_rss.read())
 
