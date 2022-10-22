@@ -12,8 +12,10 @@ main_page = requests.get(twitch_url)
 print(main_page.status_code)
 print(main_page.content)
 
-write_html = open("page.html". "w")
-write_html(main_page.content)
+write_html = open("page.html", "w")
+
+make_html_str = str(main_page.content)
+write_html.write(make_html_str)
 write_html.close()
 
 # class TwitchRecorder:  
