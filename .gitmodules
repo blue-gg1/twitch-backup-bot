@@ -1,0 +1,3 @@
+[submodule "libs/twitch-dl"]
+	path = libs/twitch-dl
+	url = https://github.com/ihabunek/twitch-dl.git

@@ -3,7 +3,7 @@ import requests
 # import youtube-dl
 
 twitch_channel = 'trashfuturepodcast'
-twitch_url = 'https://www.twitch.tv/'+twitch_channel+'videos?filter=archives&sort=time'
+twitch_url = 'https://www.twitch.tv/'+twitch_channel+'/videos?filter=archives&sort=time'
 
 
 print(twitch_channel)
