@@ -1,5 +1,6 @@
 import os
 import requests
+import regex
 from settings import twitch_channel, rss_feed_gen
 
 print(twitch_channel)
