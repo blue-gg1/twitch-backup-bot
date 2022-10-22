@@ -8,6 +8,7 @@ __pycache__/
 
 # API keys and so on
 settings.py
+secret-settings.py
 
 # Viddyas and large files 
 vids
