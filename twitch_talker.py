@@ -1,22 +1,25 @@
 import os
 import requests
-from settings import auth_header, client_header, api_url, twitch_channel
-
-
-
+from settings import twitch_channel, rss_feed_gen
 
 print(twitch_channel)
-print(twitch_url)
+print(rss_feed_gen)
 
-main_page = requests.get(twitch_url)
-print(main_page.status_code)
-print(main_page.content)
+rss_url = rss_feed_gen + twitch_channel
 
-write_html = open("page.html", "w")
+print(rss_url)
 
-make_html_str = str(main_page.content)
-write_html.write(make_html_str)
-write_html.close()
+rss_data = requests.get(rss_url)
+
+# main_page = requests.get(twitch_url)
+# print(main_page.status_code)
+# print(main_page.content)
+
+# write_html = open("page.html", "w")
+
+# make_html_str = str(main_page.content)
+# write_html.write(make_html_str)
+# write_html.close()
 
 # class TwitchRecorder:  
   
