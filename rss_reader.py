@@ -10,6 +10,13 @@ print(twitch_video_regex)
 
 
 print(regex.search(twitch_video_regex, rss_content))
+
+print(regex.findall(twitch_video_regex, rss_content))
+
+rss_findings = regex.findall(twitch_video_regex, rss_content)
+
+print(type(rss_findings))
+
 # print(regex.findall(pattern, string)(twitch_video_regex, rss_content))
 
 
