@@ -8,6 +8,13 @@ twitch_url = 'https://www.twitch.tv/'+twitch_channel
 print(twitch_channel)
 print(twitch_url)
 
+main_page = requests.get(twitch_url)
+print(main_page.status_code)
+print(main_page.content)
+
+write_html = open("page.html". "w")
+write_html(main_page.content)
+write_html.close()
 
 # class TwitchRecorder:  
   
