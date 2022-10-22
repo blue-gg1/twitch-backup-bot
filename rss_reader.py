@@ -14,7 +14,7 @@ print(regex.search(twitch_video_id_regex, rss_content))
 print(regex.findall(twitch_video_id_regex, rss_content))
 
 rss_findings = regex.findall(twitch_video_id_regex, rss_content)
-
+rss_findings = list(dict.fromkeys(rss_findings))
 
 for i in rss_findings:
     print(i)
