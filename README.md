@@ -13,7 +13,7 @@ This small codebase (once done) should allow to mirror twitch videos on other pl
 ### PoC
 1. Get the data from twitch - done (twitch RSS)
 2. Pull the video IDs out - done (have bash write to disk)
-3. Send video IDs to telegram bot - done (bots cannot talk to bots, manuel fowarding is needed)
+3. Send video IDs to telegram bot - not done (bots cannot talk to bots, human fowarding is needed)
 4. Send video IDs to file for yt-dl - not done (youtube-dl with the -a flag should work)
 
 ### MVP
