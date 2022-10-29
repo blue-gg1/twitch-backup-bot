@@ -4,11 +4,14 @@ import regex
 import subprocess
 import feedparser
 from settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
+from secret-settings import bot_name, tele_api
 
 
 with open('urls.rss') as url_list:
     lines = url_list.readlines()
     print(lines)
+    print(bot_name+tele_api)
+
 
 
 
