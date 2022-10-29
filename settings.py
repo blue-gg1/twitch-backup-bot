@@ -3,6 +3,7 @@ import requests
 from datetime import date
 
 date_now = date.today()
+date_now_string = str(date_now)
 
 auth_header = 'Bearer 2gbdx6oar67tqtcmt49t3wpcgycthx'
 client_header = 'Client-Id: uo6dggojyb8d6soh92zknwmi5ej1q2'
