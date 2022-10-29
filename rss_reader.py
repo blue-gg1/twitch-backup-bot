@@ -2,20 +2,33 @@ import os
 import requests
 import regex
 import subprocess
+import feedparser
 from settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
 
 # bash is king
 # subprocess.run(["bash", "/home/rod/Documents/code/twitch-backup-bot/rss_reader.sh"])
 
-
-# working function, but the list is fucked
 load_rss = open(rss_file_name, "r")
 rss_content = load_rss.read()
-print(twitch_video_regex)
-urls_only = regex.findall(twitch_video_regex, rss_content, flags=0)
-write_file = open("video_urls.txt","w")
-write_file.write(str(urls_only))
-write_file.close()
+# print(rss_content)
+
+
+NewsFeed = feedparser.parse(rss_content)
+entry = NewsFeed.entries[1]
+print(entry.keys())
+
+
+# print(twitch_video_regex)
+
+
+# working function, but the list is fucked
+# load_rss = open(rss_file_name, "r")
+# rss_content = load_rss.read()
+# print(twitch_video_regex)
+# urls_only = regex.findall(twitch_video_regex, rss_content, flags=0)
+# write_file = open("video_urls.txt","w")
+# write_file.write(str(urls_only))
+# write_file.close()
 
 # print(regex.search(twitch_video_regex, rss_content))
 # print(regex.findall(twitch_video_regex, rss_content))
