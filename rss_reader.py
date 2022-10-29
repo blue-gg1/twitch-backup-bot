@@ -16,11 +16,15 @@ print(twitch_video_regex)
 
 urls_only = regex.findall(twitch_video_regex, rss_content)
 
-for i in urls_only:
-    print(i)
-    write_file = open("video_urls.txt","w")
-    write_file.write(str(i))
-    write_file.close()
+write_file = open("video_urls.txt","w")
+write_file.write(str(urls_only))
+write_file.close()
+
+# for i in urls_only:
+#     print(i)
+#     write_file = open("video_urls.txt","w")
+#     write_file.write(str(i))
+# write_file.close()
 
 
 # rss_findings = regex.findall(twitch_video_regex, rss_content)
