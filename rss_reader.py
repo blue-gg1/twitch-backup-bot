@@ -11,11 +11,16 @@ load_rss = open(rss_file_name, "r")
 rss_content = load_rss.read()
 print(twitch_video_regex)
 
-print(regex.search(twitch_video_regex, rss_content))
-print(regex.findall(twitch_video_regex, rss_content))
+# print(regex.search(twitch_video_regex, rss_content))
+# print(regex.findall(twitch_video_regex, rss_content))
 
 urls_only = regex.findall(twitch_video_regex, rss_content)
-print(urls_only)
+
+for i in urls_only:
+    print(i)
+    write_file = open("video_urls.txt","w")
+    write_file.write(str(i))
+    write_file.close()
 
 
 # rss_findings = regex.findall(twitch_video_regex, rss_content)
