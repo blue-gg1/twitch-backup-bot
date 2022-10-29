@@ -21,7 +21,7 @@ take_file = open('urls.rss' , 'r')
 # print(take_file.readlines())
 for i in take_file.readlines():
     print(i)
-    send_to_telegram(i)
+    send_to_telegram('/VideoDownloadBot '+i)
 
 # with open('urls.rss') as url_list:
 #     lines = url_list.readlines()

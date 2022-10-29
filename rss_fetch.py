@@ -4,30 +4,19 @@ import regex
 import subprocess
 from settings import twitch_channel, rss_feed_gen, date_now_string, rss_file_name
 
-print(twitch_channel)
-print(rss_feed_gen)
-
-
-print(rss_url)
-
-rss_data = requests.get(rss_url)
-
-
-print('\r\n')
-print(type(video_id_list))
-print(video_id_list)
-
 def get_rss_feed():
     rss_url = rss_feed_gen + twitch_channel
-    rss_data = requests.get(rss_url)
-    rss_data_string = str(rss_data.content)
-    write_rss_disk = open(rss_file_name, "w")
-    write_rss_disk.write(rss_data_string)
-    write_rss_disk.close()
-    video_id_list = subprocess.call(["bash", "/home/rod/Documents/code/twitch-backup-bot/rss_reader.sh"])
+    try:
+        rss_data = requests.get(rss_url)
+        rss_data_string = str(rss_data.content)
+        write_rss_disk = open(rss_file_name, "w")
+        write_rss_disk.write(rss_data_string)
+        write_rss_disk.close()
+        video_id_list = subprocess.call(["bash", "/home/rod/Documents/code/twitch-backup-bot/rss_reader.sh"])
+    except Exception as e:
+        print(e)
 
-
-    
+get_rss_feed()    
 
 
 # video_id_list_str = video_id_list.stdout.splitlines()
