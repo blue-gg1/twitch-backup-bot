@@ -2,7 +2,7 @@ import os
 import requests
 import regex
 import subprocess
-from settings import twitch_channel, rss_feed_gen, date_now_string
+from settings import twitch_channel, rss_feed_gen, date_now_string, rss_file_name
 
 print(twitch_channel)
 print(rss_feed_gen)
@@ -16,9 +16,10 @@ rss_data = requests.get(rss_url)
 # print(rss_data.status_code)
 # print(rss_data.content)
 
-rss_data_string = str(rss_data.content)
+rss_file_name
 
-write_rss_disk = open('feed'+ date_now_string +'.rss', "w")
+rss_data_string = str(rss_data.content)
+write_rss_disk = open(rss_file_name, "w")
 write_rss_disk.write(rss_data_string)
 write_rss_disk.close()
 
