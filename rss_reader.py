@@ -12,9 +12,9 @@ rss_content = load_rss.read()
 print(twitch_video_regex)
 
 print(regex.search(twitch_video_regex, rss_content))
-# print(regex.findall(twitch_video_regex, rss_content))
+print(regex.findall(twitch_video_regex, rss_content))
 
-urls_only = regex.search(twitch_video_regex, rss_content)
+urls_only = regex.findall(twitch_video_regex, rss_content)
 print(urls_only)
 
 
