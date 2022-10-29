@@ -15,8 +15,6 @@ def send_to_telegram(message):
     except Exception as e:
         print(e)
 
-
-
 take_file = open('urls.rss' , 'r')
 # print(take_file.readlines())
 for i in take_file.readlines():
