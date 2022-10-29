@@ -2,18 +2,20 @@ import os
 import requests
 import regex
 import subprocess
-from settings import twitch_video_regex, twitch_video_id_regex
+from settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
+
+# subprocess.run(["bash", "/home/rod/Documents/code/twitch-backup-bot/rss_reader.sh"])
 
 
-subprocess.run(["bash", "/home/rod/Documents/code/twitch-backup-bot/rss_reader.sh"])
+load_rss = open(rss_file_name, "r")
+rss_content = load_rss.read()
+print(twitch_video_regex)
 
-
-# load_rss = open("feed.rss" , "r")
-# rss_content = load_rss.read()
-# print(twitch_video_regex)
-
-# print(regex.search(twitch_video_regex, rss_content))
+print(regex.search(twitch_video_regex, rss_content))
 # print(regex.findall(twitch_video_regex, rss_content))
+
+urls_only = regex.search(twitch_video_regex, rss_content)
+print(urls_only)
 
 
 # rss_findings = regex.findall(twitch_video_regex, rss_content)
