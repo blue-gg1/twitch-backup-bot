@@ -14,13 +14,15 @@ def send_to_telegram(message):
         print(response.text)
     except Exception as e:
         print(e)
-send_to_telegram("Hello from Python!")
 
+take_file = open('urls.rss' , 'r')
+print(take_file)
 
 # with open('urls.rss') as url_list:
 #     lines = url_list.readlines()
 #     print(lines)
-#     print(bot_name+tele_api)
+#     print(lines.type)
+#     send_to_telegram(lines)
 
 
 
