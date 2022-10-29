@@ -4,7 +4,20 @@ import regex
 import subprocess
 import feedparser
 from settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
-from secret-settings import bot_name, tele_api
+from secrets import bot_name, tele_api
+def send_to_telegram(message):
+
+    apiToken = '5082654068:AAF7quCLZ4xuTq2FBdo3POssdJsM_FRHwTs'
+    chatID = '515382482'
+    apiURL = f'https://api.telegram.org/bot{apiToken}/sendMessage'
+
+    try:
+        response = requests.post(apiURL, json={'chat_id': chatID, 'text': message})
+        print(response.text)
+    except Exception as e:
+        print(e)
+
+send_to_telegram("Hello from Python!")
 
 
 with open('urls.rss') as url_list:
