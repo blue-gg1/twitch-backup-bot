@@ -3,6 +3,8 @@ import requests
 import regex
 import subprocess
 import feedparser
+import time
+import asyncio
 from settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
 from secrets import bot_name, tele_chatID, tele_api_token
 
@@ -20,6 +22,7 @@ take_file = open('urls.rss' , 'r')
 for i in take_file.readlines():
     print(i)
     send_to_telegram('/VideoDownloadBot '+i)
+    time.sleep(1)
 
 # with open('urls.rss') as url_list:
 #     lines = url_list.readlines()
