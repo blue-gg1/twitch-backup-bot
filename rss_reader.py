@@ -14,7 +14,7 @@ print(twitch_video_regex)
 # print(regex.search(twitch_video_regex, rss_content))
 # print(regex.findall(twitch_video_regex, rss_content))
 
-urls_only = regex.findall(twitch_video_regex, rss_content)
+urls_only = regex.findall(twitch_video_regex, rss_content, flags=0)
 
 write_file = open("video_urls.txt","w")
 write_file.write(str(urls_only))
