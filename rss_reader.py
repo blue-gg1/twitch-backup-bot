@@ -29,10 +29,6 @@ for i in take_file.readlines():
 #     print(lines)
 #     print(lines.type)
 #     send_to_telegram(lines)
-
-
-
-
 # bash is king
 # subprocess.run(["bash", "/home/rod/Documents/code/twitch-backup-bot/rss_reader.sh"])
 # load_rss = open(rss_file_name, "r")

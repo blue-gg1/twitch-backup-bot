@@ -17,8 +17,6 @@ def get_rss_feed():
         print(e)
 
 # get_rss_feed()    
-
-
 # video_id_list_str = video_id_list.stdout.splitlines()
 # print(video_id_list_str)
 
