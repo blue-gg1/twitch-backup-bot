@@ -7,3 +7,6 @@
 [submodule "libs/TwitchRSS"]
 	path = libs/TwitchRSS
 	url = https://github.com/lzeke0/TwitchRSS.git
+[submodule "bots/VideoDownloadBot"]
+	path = bots/VideoDownloadBot
+	url = https://github.com/blue-gg1/VideoDownloadBot.git
