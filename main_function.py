@@ -10,4 +10,4 @@ take_file = open('urls.rss' , 'r')
 for i in take_file.readlines():
     print(i)
     send_to_telegram('/VideoDownloadBot '+i)
-    time.sleep(10)
+    time.sleep(1)
