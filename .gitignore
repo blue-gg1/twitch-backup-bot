@@ -11,6 +11,10 @@ secret-settings.py
 secret_settings.py
 secrets.py
 
+# Ignore the downloaded file
+urls.rss
+feed.rss
+
 # Viddyas and large files 
 vids
 
