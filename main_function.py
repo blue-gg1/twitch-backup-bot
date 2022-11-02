@@ -1,5 +1,5 @@
-from rss_reader import send_to_telegram
-from rss_fetch import get_rss_feed
+from libs.rss_reader import send_to_telegram
+from libs.rss_fetch import get_rss_feed
 import time
 
 

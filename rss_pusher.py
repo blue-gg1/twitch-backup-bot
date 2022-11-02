@@ -6,7 +6,7 @@ import feedparser
 from settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
 
 # bash is king
-subprocess.run(["bash", "/home/rod/Documents/code/twitch-backup-bot/rss_reader.sh"])
+subprocess.run(["bash", "rss_reader.sh"])
 
 load_rss = open(rss_file_name, "r")
 rss_content = load_rss.read()
