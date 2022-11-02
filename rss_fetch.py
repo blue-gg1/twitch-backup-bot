@@ -12,11 +12,11 @@ def get_rss_feed():
         write_rss_disk = open(rss_file_name, "w")
         write_rss_disk.write(rss_data_string)
         write_rss_disk.close()
-        video_id_list = subprocess.call(["bash", "/home/rod/Documents/code/twitch-backup-bot/rss_reader.sh"])
+        video_id_list = subprocess.call(["bash", "rss_reader.sh"])
     except Exception as e:
         print(e)
 
-get_rss_feed()    
+# get_rss_feed()    
 
 
 # video_id_list_str = video_id_list.stdout.splitlines()
