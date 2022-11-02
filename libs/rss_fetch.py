@@ -2,6 +2,7 @@ import os
 import requests
 import regex
 import subprocess
+import sys
 from settings import twitch_channel, rss_feed_gen, date_now_string, rss_file_name
 
 def get_rss_feed():
@@ -16,7 +17,7 @@ def get_rss_feed():
     except Exception as e:
         print(e)
 
-# get_rss_feed()    
+get_rss_feed()    
 # video_id_list_str = video_id_list.stdout.splitlines()
 # print(video_id_list_str)
 
