@@ -17,12 +17,12 @@ def send_to_telegram(message):
     except Exception as e:
         print(e)
 
-take_file = open('downloads/urls.rss' , 'r')
+# take_file = open('urls.rss' , 'r')
 # print(take_file.readlines())
-for i in take_file.readlines():
-    print(i)
-    send_to_telegram('/VideoDownloadBot '+i)
-    time.sleep(1)
+# for i in take_file.readlines():
+#     print(i)
+#     send_to_telegram('/VideoDownloadBot '+i)
+#     time.sleep(1)
 
 # with open('urls.rss') as url_list:
 #     lines = url_list.readlines()

@@ -7,15 +7,18 @@ date_now = date.today()
 date_now_string = str(date_now)
 ## define file as the day
 # rss_file_name = 'feed'+ date_now_string +'.rss'
+
 rss_file_name = 'feed.rss'
 ### define twitch data
 auth_header = 'Bearer 2gbdx6oar67tqtcmt49t3wpcgycthx'
 client_header = 'Client-Id: uo6dggojyb8d6soh92zknwmi5ej1q2'
 api_url = 'https://api.twitch.tv/helix/videos'
+
+### call a channel by name for the rss feed - make this into a dict later
 # twitch_channel = 'trashfuturepodcast'
-twitch_channel = 'xqcow'
+# twitch_channel = 'xqcow'
 # twitch_channel = 'amouranth'
-# twitch_channel = 'keffals'
+twitch_channel = 'keffals'
 # twitch_channel = 'brrrake'
 
 graph_ql= 'https://gql.twitch.tv/gql'
