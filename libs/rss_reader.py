@@ -5,8 +5,8 @@ import subprocess
 import feedparser
 import time
 import asyncio
-from settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
-from secrets import bot_name, tele_chatID, tele_api_token
+from libs.settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
+from libs.secrets import bot_name, tele_chatID, tele_api_token
 
 def send_to_telegram(message):
     apiURL = f'https://api.telegram.org/bot{tele_api_token}/sendMessage'
