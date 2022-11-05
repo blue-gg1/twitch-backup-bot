@@ -3,9 +3,9 @@ from libs.rss_reader import send_to_telegram
 from libs.rss_fetch import get_rss_feed
 import time
 import os
-
-
 import sys
+
+# take in what the use asks
 user_input_1 = sys.argv[1]
 
 # call the functions to get twtich videos
@@ -17,7 +17,7 @@ take_file = open('libs/urls.rss' , 'r')
 for i in take_file.readlines():
     # print(i)
     send_to_telegram('/VideoDownloadBot '+i)
-    time.sleep(5)
+    time.sleep(1)
 
 # remove the RSS files 
 if os.path.exists("libs/feed.rss"):
