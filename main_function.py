@@ -13,7 +13,7 @@ take_file = open('libs/urls.rss' , 'r')
 for i in take_file.readlines():
     # print(i)
     send_to_telegram('/VideoDownloadBot '+i)
-    time.sleep(5)
+    # time.sleep(1)
 
 # remove the RSS files 
 if os.path.exists("libs/feed.rss"):
