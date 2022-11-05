@@ -1,4 +1,32 @@
-import sys
+from lib.settings import rss_feed_gen, rss_file_name
+from libs.rss_reader import send_to_telegram
+from libs.rss_fetch import get_rss_feed
+import time
+import os
 
-print('Number of arguments:'), len(sys.argv), 'arguments.'
-print('Argument List:'), str(sys.argv)
+
+import sys
+print(sys.argv[1])
+
+
+
+# call the functions to get twtich videos
+get_rss_feed()
+
+# send the URLs to telegram
+take_file = open('libs/urls.rss' , 'r')
+# print(take_file.readlines())
+for i in take_file.readlines():
+    # print(i)
+    send_to_telegram('/VideoDownloadBot '+i)
+    time.sleep(5)
+
+# remove the RSS files 
+if os.path.exists("libs/feed.rss"):
+  os.remove("libs/feed.rss")
+else:
+  print("The file does not exist")
+if os.path.exists("libs/urls.rss"):
+  os.remove("libs/urls.rss")
+else:
+  print("The file does not exist")
