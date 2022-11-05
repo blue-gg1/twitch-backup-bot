@@ -15,12 +15,12 @@ for i in take_file.readlines():
     send_to_telegram('/VideoDownloadBot '+i)
     # time.sleep(1)
 
-# # remove the RSS files 
-# if os.path.exists("libs/feed.rss"):
-#   os.remove("libs/feed.rss")
-# else:
-#   print("The file does not exist")
-# if os.path.exists("libs/urls.rss"):
-#   os.remove("libs/urls.rss")
-# else:
-#   print("The file does not exist")
+# remove the RSS files 
+if os.path.exists("libs/feed.rss"):
+  os.remove("libs/feed.rss")
+else:
+  print("The file does not exist")
+if os.path.exists("libs/urls.rss"):
+  os.remove("libs/urls.rss")
+else:
+  print("The file does not exist")
