@@ -17,8 +17,8 @@ api_url = 'https://api.twitch.tv/helix/videos'
 ### call a channel by name for the rss feed - make this into a dict later
 # twitch_channel = 'trashfuturepodcast'
 # twitch_channel = 'xqcow'
-# twitch_channel = 'amouranth'
-twitch_channel = 'keffals'
+twitch_channel = 'amouranth'
+# twitch_channel = 'keffals'
 # twitch_channel = 'brrrake'
 
 graph_ql= 'https://gql.twitch.tv/gql'
