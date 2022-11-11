@@ -1,6 +1,6 @@
 from libs.settings import rss_feed_gen, rss_file_name
 from libs.rss_reader import send_to_telegram
-from libs.rss_fetch import get_rss_feed
+from libs.rss_fetch import get_twitch_rss_feed
 import time
 import os
 import sys
@@ -9,7 +9,7 @@ import sys
 user_input_1 = sys.argv[1]
 
 # call the functions to get twtich videos
-get_rss_feed(user_input_1)
+get_twitch_rss_feed(user_input_1)
 
 # send the URLs to telegram
 take_file = open('libs/urls.rss' , 'r')
