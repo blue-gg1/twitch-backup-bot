@@ -2,7 +2,7 @@ import os
 import requests
 import time
 from libs.settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
-from libs.secrets import bot_name, tele_chatID, tele_api_token
+from libs.secrets_settings import bot_name, tele_chatID, tele_api_token
 
 # define the function
 def send_to_telegram(message):
