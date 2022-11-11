@@ -23,3 +23,6 @@ rss_feed_gen = 'https://twitchrss.appspot.com/vod/'
 ### define yt items
 ## yt RSS
 rss_feed_gen_yt = 'https://www.youtube.com/feeds/videos.xml?channel_id='
+yt_channel_list = [
+    'vlogbrothers'
+]
