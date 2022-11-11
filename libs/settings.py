@@ -14,9 +14,9 @@ twitch_channel_list = [
     # 'MaxVerstappen',
     # 'landonorris',
     'brrrake',
-    'keffals',
+    # 'keffals',
     'trashfuturepodcast']
-    
+
 ### define RSS data
 rss_feed_gen = 'https://twitchrss.appspot.com/vod/'
 

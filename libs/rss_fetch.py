@@ -3,11 +3,11 @@ import requests
 import regex
 import subprocess
 import sys
-from libs.settings import rss_feed_gen, date_now_string, rss_file_name, twitch_channel_list
+from libs.settings import rss_feed_gen, rss_file_name, twitch_channel_list
 # from settings import twitch_channel, rss_feed_gen, date_now_string, rss_file_name
 
 # define the function
-def get_rss_feed(twitch_channel):
+def get_twitch_rss_feed(twitch_channel):
     # build the url from the given data
     rss_url = rss_feed_gen + twitch_channel
     try:
