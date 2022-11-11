@@ -16,6 +16,12 @@ This small codebase (once done) should allow to mirror twitch videos on other pl
 3. Send video IDs to telegram bot - not done (bots cannot talk to bots, human fowarding is needed)
 4. Send video IDs to file for yt-dl - not done (youtube-dl with the -a flag should work)
 
+### PoC v2 YT mode- Not done
+1. get the data from yt (rss) - not done 
+2. pull the URLs out (regex) - not done 
+3. Send video IDs to telegram bot - not done (bots cannot talk to bots, human fowarding is needed) - not done 
+4. Send video IDs to file for yt-dl (youtube-dl with the -a flag should work) - not done 
+
 ### MVP
 1. Get the data from twitch - not done (api / web scrape)
 2. Pull the video IDs out with metadata (api / web scrape)
