@@ -10,6 +10,7 @@ __pycache__/
 secret-settings.py
 secret_settings.py
 secrets.py
+secrets_settings.py
 
 # Ignore the downloaded file
 urls.rss
