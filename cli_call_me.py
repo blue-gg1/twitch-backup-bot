@@ -1,4 +1,4 @@
-from libs.settings import rss_feed_gen, rss_file_name
+from libs.settings import rss_feed_gen, rss_file_name_twitch
 from libs.rss_reader import send_to_telegram
 from libs.rss_fetch import get_twitch_rss_feed
 import time

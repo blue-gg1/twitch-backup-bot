@@ -3,8 +3,8 @@ import requests
 import regex
 import subprocess
 import sys
-# from libs.settings import rss_feed_gen, rss_file_name_twitch, twitch_channel_list, rss_feed_gen_yt
-from settings import rss_feed_gen, rss_file_name_twitch, twitch_channel_list, rss_feed_gen_yt
+from libs.settings import rss_feed_gen, rss_file_name_twitch, twitch_channel_list, rss_feed_gen_yt
+# from settings import rss_feed_gen, rss_file_name_twitch, twitch_channel_list, rss_feed_gen_yt
 
 # define the function
 def get_twitch_rss_feed(twitch_channel):
@@ -49,4 +49,4 @@ def get_yt_rss_feed(yt_channel):
     except Exception as e:
         print(e)
 
-get_yt_rss_feed('UCGaVdbSav8xWuFWTadK6loA')
+# get_yt_rss_feed('UCGaVdbSav8xWuFWTadK6loA')
