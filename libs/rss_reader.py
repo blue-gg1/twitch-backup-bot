@@ -1,7 +1,7 @@
 import os
 import requests
 import time
-from libs.settings import rss_file_name
+from libs.settings import rss_file_name_twitch
 from libs.secrets_settings import bot_name, tele_chatID, tele_api_token
 
 # define the function
