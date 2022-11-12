@@ -9,6 +9,7 @@ __pycache__/
 # API keys and so on
 secret-settings.py
 secret_settings.py
+libs/secrets_settings.py
 secrets.py
 
 # Ignore the downloaded file
