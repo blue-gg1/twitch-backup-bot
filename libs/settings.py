@@ -9,6 +9,7 @@ date_now_string = str(date_now)
 ## define file as the day
 # rss_file_name = 'feed'+ date_now_string +'.rss'
 rss_file_name = 'libs/feed.rss'
+yt_rss_file_name = 'libs/yt_feed.rss'
 
 ### define twitch data - not used 
 auth_header = 'Bearer 2gbdx6oar67tqtcmt49t3wpcgycthx'
