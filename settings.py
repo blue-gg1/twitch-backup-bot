@@ -4,7 +4,8 @@
 
 
 ### define twitch data
-twitch_channel = 'trashfuturepodcast'
+twitch_channel = 'irissiri129'
+# twitch_channel = 'trashfuturepodcast'
 # twitch_channel = 'teampgp'
 # twitch_channel = 'brrrake'
 # auth_header = 'Bearer 2gbdx6oar67tqtcmt49t3wpcgycthx'
