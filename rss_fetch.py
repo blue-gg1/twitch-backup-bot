@@ -1,6 +1,6 @@
 import os
 import requests
-import regex
+# import regex
 import subprocess
 import sys
 from settings import twitch_channel, rss_feed_gen, date_now_string, rss_file_name

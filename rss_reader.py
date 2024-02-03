@@ -1,8 +1,8 @@
 import os
 import requests
-import regex
+# import regex
 import subprocess
-import feedparser
+# import feedparser
 import time
 import asyncio
 from settings import twitch_video_regex, twitch_video_id_regex, rss_file_name
